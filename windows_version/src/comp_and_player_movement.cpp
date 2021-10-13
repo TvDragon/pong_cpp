@@ -35,3 +35,11 @@ void MoveDownComputer(Rectangle& paddle, Rectangle bottom_bar, bool& move_downwa
   if (move_downwards)
     paddle.SetY(paddle.GetY() + paddle.GetSpeed());
 }
+
+void MoveComputerUpHardMode(Rectangle& paddle) {
+  paddle.SetY(paddle.GetY() - paddle.GetSpeed());
+}
+
+void MoveComputerDownHardMode(Rectangle& paddle) {
+  paddle.SetY(paddle.GetY() + paddle.GetSpeed());
+}

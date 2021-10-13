@@ -12,4 +12,8 @@ void MoveUpComputer(Rectangle& paddle, Rectangle top_bar, bool& move_downwards);
 
 void MoveDownComputer(Rectangle& paddle, Rectangle bottom_bar, bool& move_downwards);
 
+void MoveComputerUpHardMode(Rectangle& paddle);
+
+void MoveComputerDownHardMode(Rectangle& paddle);
+
 #endif
