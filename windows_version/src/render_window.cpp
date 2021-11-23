@@ -51,7 +51,7 @@ void RenderWindow::PlayersOption(SDL_Rect& message_rect_one, SDL_Rect& message_r
 
   // Type Text On Screen
   // TTF_Font* font = TTF_OpenFont("fonts/bit5x3.ttf", 50);  // Font type ttf in folder on linux
-  TTF_Font* font = TTF_OpenFont("fonts/bit5x3.ttf", 50);  // Font type ttf in folder on windows
+  TTF_Font* font = TTF_OpenFont("../fonts/bit5x3.ttf", 50);  // Font type ttf in folder on windows
 
   SDL_Color text_colour = {255, 255, 255};
 
@@ -106,7 +106,7 @@ void RenderWindow::DifficultyPicker(SDL_Rect& message_rect_one, SDL_Rect& messag
 
   // Type Text On Screen
   // TTF_Font* font = TTF_OpenFont("fonts/bit5x3.ttf", 50);  // Font type ttf in folder on linux
-  TTF_Font* font = TTF_OpenFont("fonts/bit5x3.ttf", 50);  // Font type ttf in folder on windows
+  TTF_Font* font = TTF_OpenFont("../fonts/bit5x3.ttf", 50);  // Font type ttf in folder on windows
   SDL_Color text_colour = {255, 255, 255};
 
   // as TTF_RenderText_Solid could only be used on
@@ -173,7 +173,7 @@ void RenderWindow::DisplayScores(int paddle_one_score, int paddle_two_score) {
 
   // Type text on screen
   // TTF_Font* font = TTF_OpenFont("fonts/bit5x3.ttf", 50);  // Font type ttf in folder on linux
-  TTF_Font* font = TTF_OpenFont("fonts/bit5x3.ttf", 50);  // Font type ttf in folder on windows
+  TTF_Font* font = TTF_OpenFont("../fonts/bit5x3.ttf", 50);  // Font type ttf in folder on windows
   SDL_Color text_colour = {255, 255, 255};
 
   // as TTF_RenderText_Solid could only be used on
@@ -212,7 +212,7 @@ void RenderWindow::Win(int paddle_one_score, int paddle_two_score) {
   char gameover[4] = "WIN";
 
   // Type Text On Screen
-  TTF_Font* font = TTF_OpenFont("fonts/bit5x3.ttf", 30);  // Font type ttf in folder
+  TTF_Font* font = TTF_OpenFont("../fonts/bit5x3.ttf", 30);  // Font type ttf in folder
   SDL_Color text_colour = {255, 255, 255};
 
   // as TTF_RenderText_Solid could only be used on
