@@ -10,6 +10,7 @@
 void BallMovement(Rectangle& ball, Rectangle paddle_one, Rectangle paddle_two,
                     bool& move_right, float& b,
                     Rectangle top_bar, Rectangle bottom_bar,
-                    int& paddle_one_score, int& paddle_two_score);
+                    int& paddle_one_score, int& paddle_two_score,
+                    int num_difficulty);
 
 #endif

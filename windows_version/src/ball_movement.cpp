@@ -5,9 +5,11 @@
 void BallMovement(Rectangle& ball, Rectangle paddle_one, Rectangle paddle_two,
                     bool& move_right, float& b,
                     Rectangle top_bar, Rectangle bottom_bar,
-                    int& paddle_one_score, int& paddle_two_score)
+                    int& paddle_one_score, int& paddle_two_score,
+                    int num_difficulty)
 {
   bool start_over = false;
+  int random_speed = 0;
 
   float paddle_one_x = paddle_one.GetX();
   float paddle_one_width = paddle_one_x + paddle_one.GetCurrentFrame().w;
@@ -58,6 +60,15 @@ void BallMovement(Rectangle& ball, Rectangle paddle_one, Rectangle paddle_two,
     paddle_one_score += 1;
     
   } else if (ball_y + b <= top_bar_height || ball_height + b >= bottom_bar_y) {
+    if (num_difficulty == 3) {
+      random_speed = rand() % 7 + 4;
+
+      if (ball.GetSpeed() < 0) {
+        ball.SetSpeed(random_speed * -1);
+      } else {
+        ball.SetSpeed(random_speed);
+      }
+    }
     // printf("Ball: %0.0f, %0.0f, %0.0f, %0.0f, %0f\n", ball_x, ball_width, ball_y, ball_height, bottom_bar_y);
     b *= -1;
   }

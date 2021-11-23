@@ -80,20 +80,20 @@ int main(int argc, char** argv) {
                   outline_rect_one, outline_rect_two, outline_rect_three,
                   num_difficulty);
 
-    if (num_difficulty == 1 && num_players == 1) {
-      EasyMode(window, event, paddle_one,
+    if (num_players == 1) {
+      GameLoop(window, event, paddle_one,
                 paddle_two, middle_lines[num_rects-2], middle_lines[num_rects-1],
                 ball, middle_lines,
                 game_running, within_range, game_over, move_downwards, move_right,
                 b, distance, num_rects, paddle_one_score, paddle_two_score,
-                num_players);
-    } else if (num_difficulty == 1 && num_players == 2) {
-        EasyMode(window, event, paddle_one,
+                num_players, num_difficulty);
+    } else if (num_players == 2) {
+        GameLoop(window, event, paddle_one,
                 paddle_two, middle_lines[num_rects-2], middle_lines[num_rects-1],
                 ball, middle_lines,
                 game_running, within_range, game_over, move_downwards, move_right,
                 b, distance, num_rects, paddle_one_score, paddle_two_score,
-                num_players);
+                num_players, num_difficulty);
     }
 
     window.Win(paddle_one_score, paddle_two_score);
