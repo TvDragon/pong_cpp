@@ -52,9 +52,9 @@ Note: If you are a windows user you can just skip the install prerequisites and 
 
 ## Controls
 
-- Jump - spacebar
-- Move Left - left arrow key
-- Move Right - right arrow key
-- Attack One - z
-- Attack Two - x
-- Attack Three - c
+- Left Paddle:
+	- Move Up - w
+	- Move Down - d
+- Right Paddle:
+	- Move Up - up arrow key
+	- Move Down - down arrow key
