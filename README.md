@@ -1,11 +1,11 @@
-# Basic Platformer
+# Pong
 ## Motivation
 
 This is the classic Pong game that all retro players remember. The absolute beauty of a game like this can never be forgotten. I wanted to remake this game as it was something I played often because of how fun it it was given its simplicity. I also took this opportunity to try creating buttons for you to select the difficulty and whether you wanted to play this solo or against a friend in person.
 
 ## Getting Started
 
-### Preprequisites
+### Optional Dependency Installs
 
 Note: You do not have to install the necessary libraries to play as they are already included in the downloads. You can move down to the usage section to start playing the game. However if the game doesn't work then you may have to follow the install guide below.
 
@@ -37,27 +37,27 @@ Note: You do not have to install the necessary libraries to play as they are alr
 
 Note: The package manager you use will be different depending on which linux system you use. You can find your package manager by searching it on the internet if you don't know then install the libraries.
 
-#### Install on Windows
+#### Installing on Windows
 1. Follow tutorial to install on [windows](https://www.matsson.com/prog/sdl2-mingw-w64-tutorial.php)
 
-### Installing
-1. You can either download the zip file and upzip it or clone th repository
+## Installing the game
+If you want to install the source code or appimage for Linux you can download it at [Linux Build](https://github.com/TvDragon/pong_cpp/releases/tag/Linux)
 
-		git clone https://github.com/TvDragon/pong_cpp.git
+If you want to install the source code for Windows you can download it at [Windows Build](https://github.com/TvDragon/pong_cpp/releases/tag/Windows)
 	
 ## Usage
 
-1. Once you have installed the prerequisites and unzipped the file or cloned the repository move into the folder
+1. Once you have installed and unzipped the file or cloned the repository move into the folder
 
-2. If you use Ubuntu/Debian move into linux_version then you can run the command below which will compile the files using a Makefile then you can run the game
+2. If you use Ubuntu/Debian move into folder you unzipped then you can run the command in your terminal in the directory that you downloaded the game to and start playing the game
 
 		sh play.sh
 
 3. If you prefer using an app image then run the command below in your terminal in the directory that you downloaded the game and start playing the game by double clicking on it
 
-		chmod a+x Basic_Platformer-x86_64.AppImage
+		chmod a+x Pong-x86_64.AppImage
 
-4. If you use Windows then you need to open the windows folder then plays folder and double click on play.exe to play the game
+4. If you use Windows then you need to open the folder you just unzipped then play folder and double click on play.exe to play the game
 
 ## Controls
 
