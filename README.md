@@ -67,3 +67,7 @@ If you want to install the source code for Windows you can download it at [Windo
 - Right Paddle:
 	- Move Up - up arrow key
 	- Move Down - down arrow key
+
+## Video Gameplay
+
+https://github.com/TvDragon/pong_cpp/assets/67213501/9d2babf1-791d-4015-9b40-63b939dfbc82
