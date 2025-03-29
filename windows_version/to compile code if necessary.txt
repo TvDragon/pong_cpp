@@ -1,1 +1,0 @@
-g++ main.cpp render_window.cpp rectangle.cpp game.cpp draw_objects.cpp ball_movement.cpp comp_and_player_movement.cpp home_and_difficulty_screen.cpp -IC:\SDL2-w64\include -LC:\SDL2-w64\lib -lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lSDL2_ttf -o main
